@@ -4,7 +4,7 @@ import { configuration } from '../../utils/constants'
 import { OpenAIApi } from 'openai'
 
 type Data = {
-  input: string
+  result: string
 }
 
 const openai = new OpenAIApi(configuration)
