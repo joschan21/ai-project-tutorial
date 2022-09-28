@@ -33,6 +33,7 @@ const Home: NextPage = () => {
 
       const suggestion: { result: string } = await res.json()
       const { result } = suggestion
+      console.log('result', result)
 
       setSuggestion(result)
     } catch (error) {

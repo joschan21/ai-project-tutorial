@@ -11,6 +11,7 @@ const openai = new OpenAIApi(configuration)
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
   const { input } = req.body
+  console.log('input', input)
 
   const response = await openai.createCompletion({
     model: 'text-davinci-002',
